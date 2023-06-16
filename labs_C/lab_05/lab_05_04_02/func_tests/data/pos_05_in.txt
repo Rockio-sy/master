@@ -1,0 +1,5 @@
+./app fb out.bin ile
+automobile
+BMW
+399
+9
