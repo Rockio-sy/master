@@ -1,9 +1,0 @@
-micophone
-luipz
-500
-3
-Telephone
-apple
-400
-2
-
