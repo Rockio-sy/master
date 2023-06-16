@@ -1,0 +1,47 @@
+import math
+n_1 = int(input("Insert the numbers of elements that you want in first array: "))
+n_2 = n_1
+matrix_1 = []
+matrix_2 = []
+for i in range(n_1):
+    element = int(input(f"Insert the{i+1} element in the first array: "))
+    if element not in matrix_1:
+        matrix_1.append(element)
+for i in range(n_2):
+    element = int(input(f"Insert the{i + 1} element in the sec array: "))
+    if element not in matrix_2:
+        matrix_2.append(element)
+print("The first list: \n", matrix_1)
+print("The second list:\n", matrix_2)
+matrix_3 = []
+for i in range(len(matrix_1)):
+    matrix_3.append(matrix_1[i])
+for i in range(len(matrix_2)):
+    matrix_3.append(matrix_2[i])
+print(matrix_3)
+max_ = -math.inf
+min_ = math.inf
+ind_x = 0
+ind_n = 0
+real_m = 0
+for i in range(len(matrix_3)):
+    if matrix_3[i] % 2 == 1:
+        if matrix_3[i] > max_:
+            max_ = matrix_3[i]
+            ind_x = i
+    if matrix_3[i] < 0:
+        if matrix_3[i] % 2 == 0:
+            if matrix_3[i] < min_:
+                min_ = matrix_3[i]
+                ind_n = i
+
+
+if min_ == math.inf:
+    print("There isn't negative number.")
+print(f"The greatest positive odd  number is {max_}")
+print(f"The smallest negative even number is {min_}")
+if min_ != math.inf:
+    for i in range(len(matrix_3)):
+        matrix_3[ind_x] = min_
+        matrix_3[ind_n] = real_m
+print(matrix_3)
