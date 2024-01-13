@@ -1,0 +1,57 @@
+CC = gcc
+SRC_DIR := ./src
+INC_DIR := ./inc
+OUT_DIR := ./out
+
+U_CFLAGS := -lcheck
+UTESTS_DIR := ./unit_tests
+
+CFLAGS =-std=c99 -Wall -Werror -Wpedantic -ggdb -I$(INC_DIR)
+LFLAGS =--coverage
+.PHONY : clean dir release debug func
+.NOTPARALLEL: release debug
+
+release: CFLAGS+= -o2
+release: $(OUT_DIR)/release.lastbuildstate app.exe
+
+debug: CFLAGS+= --coverage
+debug: LFLAGS+= -g3
+debug: $(OUT_DIR)/debug.lastbuildstate app.exe
+
+func: CFLAGS+= --coverage
+func: LFLAGS+= -g3
+
+OBJECTS_ALL := $(OUT_DIR)/my_snprintf.o
+OBJECTS_MAIN := $(OUT_DIR)/main.o
+OBJECTS_UNIT := $(OUT_DIR)/check_main.o $(OUT_DIR)/check_my_snprintf.o
+
+%.exe: $(OBJECTS_MAIN) $(OBJECTS_ALL)
+	$(CC) $(LFLAGS) -ggdb -o $@ $^
+
+test.exe: $(OBJECTS_UNIT) $(OBJECTS_ALL)
+	$(CC) -o $@ $^ $(U_CFLAGS)
+
+$(OUT_DIR)/check_%.o: $(UTESTS_DIR)/check_%.c | dir
+	$(CC) $(CFLAGS) -c $< -o $@
+
+$(OUT_DIR)/%.o: $(SRC_DIR)/%.c | dir
+	$(CC) $(CFLAGS) -c $^ -o $@
+
+$(OUT_DIR)/release.lastbuildstate: | dir
+	rm -rf *.exe $(OUT_DIR)/*.o $(OUT_DIR)/debug.lastbuildstate
+	touch $(OUT_DIR)/release.lastbuildstate
+
+$(OUT_DIR)/debug.lastbuildstate: | dir
+	rm -rf *.exe $(OUT_DIR)/*.o $(OUT_DIR)/release.lastbuildstate
+	touch $(OUT_DIR)/debug.lastbuildstate
+
+dir:
+	mkdir -p $(OUT_DIR)/
+
+clean :
+	rm -fv *.exe
+	rm -fv $(OUT_DIR)/*.o
+	rm -fv $(OUT_DIR)/*.gcno
+	rm -fv $(OUT_DIR)/*.gcda
+	rm -rf $(OUT_DIR)/*.lastbuildstate
+	rm -rf $(OUT_DIR)

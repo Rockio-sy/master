@@ -1,0 +1,1 @@
+o ./neg_32_in_m1.txt neg_out.txt

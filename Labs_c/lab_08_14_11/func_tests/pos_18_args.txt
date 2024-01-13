@@ -1,0 +1,1 @@
+o ./pos_18_in_m1.txt pos_out.txt

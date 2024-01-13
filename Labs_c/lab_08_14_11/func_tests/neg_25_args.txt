@@ -1,0 +1,1 @@
+a ./neg_06_in_m1.txt ./neg_25_in_m2.txt neg_out.txt
