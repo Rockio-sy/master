@@ -1,0 +1,27 @@
+Этот код написан на языке программирования C и определяет функции для чтения квадратной матрицы от пользователя, поиска наибольшего элемента в нижней треугольной части матрицы, оканчивающейся на 5, и вывода максимального найденного элемента.
+
+Код начинается с серии операторов #include для импорта нескольких заголовочных файлов стандартной библиотеки C для ввода/вывода, выделения памяти, логического типа данных и типа size_t. Затем с помощью макросов препроцессора определяются несколько констант, включая коды ошибок и максимальный размер матрицы.
+
+Программа определяет шесть функций:
+
+     input_matrix_param считывает размер матрицы от пользователя и возвращает код ошибки, если ввод недействителен.
+     input_matrix считывает элементы матрицы от пользователя и возвращает код ошибки, если ввод недействителен.
+     input вызывает input_matrix_param и input_matrix для чтения размера и элементов матрицы от пользователя и возвращает код ошибки, если ввод недействителен.
+     find_max_under_side ищет самый большой элемент в нижней треугольной части матрицы, оканчивающейся на 5, и возвращает код ошибки, если такой элемент не найден.
+     main — это точка входа в программу. Он объявляет квадратную матрицу размера N x N, вызывает функцию ввода для чтения матрицы от пользователя, вызывает функцию find_max_under_side для поиска наибольшего элемента в нижней треугольной части матрицы, оканчивающейся на 5, и выводит максимальный элемент найденный.
+-------------------------------------------------------------------------------------------------
+Программа использует несколько управляющих структур, в том числе операторы if, циклы for и цикл do-while для выполнения различных задач. Программа также использует переменные-указатели для передачи аргументов и изменения переменных в различных функциях.
+
+This code is written in the C programming language and it defines functions to read a square matrix from the user, search for the largest element in the lower triangular part of the matrix that ends with 5, and output the maximum element found.
+
+The code begins with a series of #include statements to import several C standard library header files for input/output, memory allocation, boolean data type, and size_t type. Then, several constants are defined using preprocessor macros, including error codes and the maximum size of the matrix.
+
+The program defines six functions:
+
+    input_matrix_param reads the size of the matrix from the user and returns an error code if the input is invalid.
+    input_matrix reads the elements of the matrix from the user and returns an error code if the input is invalid.
+    input calls input_matrix_param and input_matrix to read the size and elements of the matrix from the user and returns an error code if the input is invalid.
+    find_max_under_side searches for the largest element in the lower triangular part of the matrix that ends with 5 and returns an error code if no such element is found.
+    main is the entry point of the program. It declares a square matrix of size N x N, calls the input function to read the matrix from the user, calls the find_max_under_side function to find the largest element in the lower triangular part of the matrix that ends with 5, and outputs the maximum element found.
+
+The program uses several control structures, including if statements, for loops, and a do-while loop, to perform various tasks. The program also uses pointer variables to pass arguments and modify variables in different functions.

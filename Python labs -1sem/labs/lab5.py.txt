@@ -1,0 +1,28 @@
+eps = float(input("Insert the eps value: "))
+step = int(input("insert the step: "))
+count = int(input("Insert the count: "))
+# Taking the values from the user
+print("-"*37)
+print( "| Iteration   |   Terms   |   summa  |  ")
+print("-"*37)
+# Generating the tapel form
+i=1
+seq=0
+while i <= count:
+    term = ((-1)**(i-1))*(2*i+1)/(i*(i+1))
+    if abs(term) < eps:
+        break
+    if (i-1) % step == 0:
+        seq += term
+        print(f"|{i:^11}|{term:^11.3g}|{seq:^11.3g}|")
+    i += 1
+# printing values
+print("-"*37)
+# Closeing the table
+print()
+if  i== count+1:
+        print(" doesnt exixt enogh accuersy       ")
+else:
+        print(f"The finally sum of the infinite series = {seq:3g} , When i = {i-1}")
+# Finish
+

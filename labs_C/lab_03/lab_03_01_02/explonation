@@ -1,0 +1,51 @@
+Это программа на C, которая считывает матрицу из стандартного ввода и находит столбцы, в которых элементы чередуются по знаку, т. е. произведение любых двух последовательных элементов в столбце отрицательно.
+
+Вот краткое описание программы:
+
+     Программа включает в себя несколько стандартных библиотек C, таких как stdio.h, stdlib.h и stdbool.h, а также библиотеку stddef.h для типа данных size_t.
+
+     Программа определяет несколько констант, включая коды ошибок и максимальный размер матрицы.
+
+     Программа определяет несколько функций, в том числе:
+
+     input_matrix_param: считывает параметр size_t из стандартного ввода и проверяет, является ли он допустимым.
+     input_matrix: считывает элементы матрицы из стандартного ввода и проверяет, являются ли они допустимыми входными данными.
+     input: объединяет две вышеупомянутые функции для чтения размера матрицы и элементов из стандартного ввода.
+     find_alternating_columns: находит столбцы, в которых элементы чередуются по знаку, перебирая все столбцы и проверяя, является ли произведение любых двух последовательных элементов в столбце отрицательным.
+     print_array: печатает целочисленный массив в стандартный вывод.
+
+     В программе определена основная функция, которая выполняет следующие действия:
+
+     Объявляет матрицу int matrix[N][M] и две переменные size_t n и m.
+     Вызывает функцию ввода для чтения размера матрицы и элементов из стандартного ввода.
+     Объявляет целочисленный массив int array[N].
+     Вызывает функцию find_alternating_columns для поиска столбцов, в которых элементы чередуются по знаку.
+     Вызывает функцию print_array для вывода результата на стандартный вывод.
+
+Обратите внимание, что программа содержит неиспользуемую функцию print_matrix и некоторый закомментированный код (обозначается #if 0 и #endif).
+------------------------------------------------------------------------------------------------
+This is a C program that reads a matrix from the standard input and finds the columns where the elements alternate in sign, i.e., the product of any two consecutive elements in the column is negative.
+
+Here is a brief description of the program:
+
+    The program includes several standard C libraries, such as stdio.h, stdlib.h, and stdbool.h, as well as the stddef.h library for size_t data type.
+
+    The program defines several constants, including error codes and the maximum size of the matrix.
+
+    The program defines several functions, including:
+
+    input_matrix_param: reads a size_t parameter from the standard input and checks whether it is a valid input.
+    input_matrix: reads the matrix elements from the standard input and checks whether they are valid inputs.
+    input: combines the above two functions to read the matrix size and elements from the standard input.
+    find_alternating_columns: finds the columns where the elements alternate in sign by iterating over all columns and checking whether the product of any two consecutive elements in the column is negative.
+    print_array: prints an integer array to the standard output.
+
+    The program defines the main function, which does the following:
+
+    Declares a matrix int matrix[N][M] and two size_t variables n and m.
+    Calls the input function to read the matrix size and elements from the standard input.
+    Declares an integer array int array[N].
+    Calls the find_alternating_columns function to find the columns where the elements alternate in sign.
+    Calls the print_array function to print the result to the standard output.
+
+Note that the program contains an unused function print_matrix and some commented-out code (denoted by #if 0 and #endif).
