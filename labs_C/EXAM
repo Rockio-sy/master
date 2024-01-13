@@ -1,9 +1,0 @@
-The exam was simple task 
-Create 2 arrays
-One for integers
-The second for names
-The maximum number of elements in each array is 5 
-The max length name is 15 
-If the use inserted STOP instead of any name then make the number in the inverse index of the inumbers array =5
-ask the user for number n
-Then make a loop and delete every element from the both arrays that less then the number user inserted

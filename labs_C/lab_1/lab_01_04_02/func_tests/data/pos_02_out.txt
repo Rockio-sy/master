@@ -1,5 +1,0 @@
-Enter sec:
-hour = 1
-min = 30
-sec = 0
-
