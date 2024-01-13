@@ -1,3 +1,0 @@
-Result: this no
-is yes
-test no

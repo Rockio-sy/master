@@ -1,1 +1,0 @@
-./app fb out.bin one

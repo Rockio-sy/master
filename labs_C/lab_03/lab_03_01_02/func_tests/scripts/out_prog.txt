@@ -1,1 +1,0 @@
-Insert how many rows: Error: incorrect input

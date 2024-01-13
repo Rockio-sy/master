@@ -1,5 +1,0 @@
-./app ab out.bin
-automobile
-BMW
-399
-9

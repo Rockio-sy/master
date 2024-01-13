@@ -1,4 +1,0 @@
-
-stud_1 name is :Tarek, with age 199 and marks:[2, 5, 6, 7]
-stud_2 name is :Hasan, with age 33 and marks:[3, 5, 6]
-stud_3 name is :Lord, with age 79 and marks:[8, 9, 4, 2, 4]

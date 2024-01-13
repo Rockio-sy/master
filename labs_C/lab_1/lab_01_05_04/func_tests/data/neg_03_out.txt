@@ -1,2 +1,0 @@
-Enter n:
-Incorrect input

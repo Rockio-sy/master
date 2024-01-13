@@ -1,2 +1,0 @@
-Enter x, eps:
-Error

@@ -1,1 +1,0 @@
-./main t2b input.txt
