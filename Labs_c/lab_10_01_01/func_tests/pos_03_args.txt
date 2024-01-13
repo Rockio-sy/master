@@ -1,0 +1,1 @@
+f ./pos_03_in_f1.txt ./pos_03_in_f2.txt ./pos_out.txt

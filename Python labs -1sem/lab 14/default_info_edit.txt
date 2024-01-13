@@ -1,0 +1,6 @@
+black pants%(male pants%(51.90%(32
+white pants%(male pants%(55.90%(28
+blue pants%(male pants%(49.90%(30
+black skirt%(skirts%(30.90%(26
+white sneakers%(male sneakers%(101.90%(44
+chuck taylor 70'%(sneakers%(200.00%(43

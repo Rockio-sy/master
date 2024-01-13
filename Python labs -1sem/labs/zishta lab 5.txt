@@ -1,0 +1,17 @@
+x = float(input("Insert x value: "))
+eps = float(input("Insert the eps value: "))
+y=1
+i=2
+fact = 1
+while True:
+    fact *= i
+    term = (i*x)/fact
+    if term < eps:
+        break
+    else:
+        y+=term
+    i += 1
+print(y)
+
+
+

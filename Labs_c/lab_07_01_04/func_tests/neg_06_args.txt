@@ -1,0 +1,1 @@
+neg_06_in.txt neg_out.txt f

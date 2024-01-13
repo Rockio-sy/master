@@ -1,0 +1,18 @@
+Maggi
+67.0
+45.0
+AKVA
+100
+0.5
+CLEAR Men
+30
+0.4
+Genius
+50
+0.2
+Genius
+7
+0.1
+Geros
+10
+7
